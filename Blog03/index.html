@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeBlog - Compiler vs. Interpreter</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F5F5F5;
+      color: #333;
+    }
+
+    header {
+      background-color: #282C35;
+      padding: 1em;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    h1, h2 {
+      color: #61dafb;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 1.5em;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 2em;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #282C35;
+      color: #BBBBBB;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Compiler vs. Interpreter</h1>
+    <p>Understanding the Difference Through Simple Analogies and Code Examples</p>
+</header>
+
+<main>
+
+    <article>
+        <h2>Compiler: The Book Translator</h2>
+        <p>Imagine you have a book (your source code) written in English, and you want to share it with people who speak French (machine language). A <strong>compiler</strong> would be like a translator who translates the entire book from English to French before giving it to the readers.</p>
+        
+        <p>This means that the translation happens once, and the French version can be read by anyone without needing the translator each time.</p>
+    </article>
+
+    <article>
+        <h2>Example: Compiler in Action</h2>
+        <p>Let's consider a simple C program:</p>
+        <code>
+            <pre>
+#include <stdio.h>
+
+int main() {
+printf("Hello, Compiler!\n");
+return 0;
+}
+            </pre>
+        </code>
+        <p>When you compile this code, the compiler translates the entire program into machine code. You then have an executable file that can be run independently without needing the original source code.</p>
+    </article>
+
+    <article>
+        <h2>Interpreter: The Real-Time Translator</h2>
+        <p>Now, think of having a bilingual assistant who can translate your sentences (source code) into another language (machine code) on the fly. This is similar to how an <strong>interpreter</strong> works, translating and executing code line by line as needed.</p>
+
+        <p>Unlike the compiler, the interpreter provides real-time feedback but needs to be present whenever the code is executed.</p>
+    </article>
+
+    <article>
+        <h2>Example: Interpreter in Action</h2>
+        <p>Consider a simple Python script:</p>
+        <code>
+            <pre>
+print("Hello, Interpreter!")
+            </pre>
+        </code>
+        <p>When you run this Python script, the interpreter reads and translates each line on the spot, providing immediate output without the need for a separate compilation step.</p>
+    </article>
+
+    <article>
+        <h2>Key Differences</h2>
+        <p>1. <strong>Execution Approach:</strong> Compiler translates the entire code before execution, while an interpreter processes and executes code line by line in real-time.</p>
+        <p>2. <strong>Feedback Time:</strong> Compiler provides feedback after the entire code is translated, while an interpreter offers instant feedback as it processes each line.</p>
+        <p>3. <strong>Portability:</strong> Compiled code results in an independent executable file, while interpreted code requires the interpreter to be present on the target system.</p>
+    </article>
+
+</main>
+
+  <footer>
+    &copy; 2024 CodeBlog | By Adarsh Kumar
+  </footer>
+
+</body>
+</html>
